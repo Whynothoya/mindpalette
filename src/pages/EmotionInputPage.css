@@ -1,0 +1,64 @@
+.input-container {
+  text-align: center;
+  padding: 60px 20px;
+  padding-bottom: 100px;
+}
+
+.input-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.input-textbox {
+  width: 90%;
+  height: 140px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  resize: none;
+  background: #fafafa;
+  transition: 0.25s;
+}
+
+.input-textbox:focus {
+  border-color: #aaa;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+}
+
+.input-btn,
+.skip-btn {
+  width: 90%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.input-btn {
+  background: #6C63FF;
+  color: #fff;
+}
+
+.input-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.35);
+}
+
+.skip-btn {
+  background: #ddd;
+  color: #333;
+  font-size: 14px;
+}
+
+.skip-btn:hover {
+  background: #ccc;
+  transform: translateY(-2px);
+}

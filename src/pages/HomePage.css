@@ -1,0 +1,12 @@
+.home-container {
+  background: #fffaf0;
+}
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffb3b3;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}

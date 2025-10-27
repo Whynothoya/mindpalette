@@ -1,0 +1,95 @@
+/* 전체 레이아웃 */
+.calendar-container {
+  padding: 20px;
+  padding-bottom: 90px;
+  min-height: 100vh;
+  transition: background 0.3s ease-in-out;
+}
+
+.calendar-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #444;
+}
+
+/* 캘린더 스타일 */
+.react-calendar {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+/* 감정 표시 타일 */
+.date-cell {
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.date-emoji {
+  font-size: 20px;
+  display: inline-block;
+  transform-origin: center;
+}
+
+/* ✅ 선택한 날짜 강조 애니메이션 */
+.tile-selected .date-cell {
+  transform: scale(1.06);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  animation: pulse-bg 0.45s ease-out;
+}
+
+@keyframes pulse-bg {
+  0%   { background-color: rgba(0,0,0,0.00); }
+  50%  { background-color: rgba(0,0,0,0.04); }
+  100% { background-color: rgba(0,0,0,0.00); }
+}
+
+/* ✅ 상세 카드 */
+.detail-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffffffee;
+  border-radius: 16px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+  animation: fadeUp 0.35s ease-out;
+  overflow: hidden;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.detail-emoji {
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.85); opacity: 0; }
+  60%  { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.detail-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.detail-text {
+  font-size: 15px;
+  color: #555;
+  margin-top: 6px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
