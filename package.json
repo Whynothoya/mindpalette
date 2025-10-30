@@ -2,5 +2,8 @@
   "functions": {
     "source": "functions",
     "predeploy": []
+  },
+  "dependencies": {
+    "groq-sdk": "^0.34.0"
   }
 }
